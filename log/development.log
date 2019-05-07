@@ -282,3 +282,1955 @@ Started GET "/cable" for ::1 at 2019-05-07 11:32:00 -0700
 Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:32:00 -0700
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 Subscription class not found: "ChatChannel"
+Started GET "/cats" for ::1 at 2019-05-07 11:41:23 -0700
+Processing by CatsController#index as HTML
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 9.4ms)
+
+
+  
+NameError (undefined local variable or method `w' for #<Class:0x00007fc0181cb5f8>):
+  
+app/models/cat.rb:4:in `<class:Cat>'
+app/models/cat.rb:1:in `<top (required)>'
+app/controllers/cats_controller.rb:4:in `index'
+Started GET "/cable" for ::1 at 2019-05-07 11:41:30 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:41:30 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/cats" for ::1 at 2019-05-07 11:41:38 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:9: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/cats/index.html.erb:9: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/cable" for ::1 at 2019-05-07 11:41:46 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:41:46 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/cats" for ::1 at 2019-05-07 11:42:00 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (2.0ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 41ms (Views: 32.1ms | ActiveRecord: 5.5ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCat Create (9.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", 0], ["color", "black"], ["name", "Jenny"], ["sex", "F"], ["description", "Cutest"], ["created_at", "2019-05-07 18:45:28.024782"], ["updated_at", "2019-05-07 18:45:28.024782"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCat Create (1.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2000-01-01"], ["color", "black"], ["name", "Jenny"], ["sex", "F"], ["description", "Cutest"], ["created_at", "2019-05-07 18:46:13.828198"], ["updated_at", "2019-05-07 18:46:13.828198"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/cats" for ::1 at 2019-05-07 11:46:21 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 52ms (Views: 42.9ms | ActiveRecord: 6.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCat Create (2.3ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2000-01-01"], ["color", "black"], ["name", "Kyle"], ["sex", "M"], ["description", "Cutest"], ["created_at", "2019-05-07 18:46:59.758751"], ["updated_at", "2019-05-07 18:46:59.758751"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/cats" for ::1 at 2019-05-07 11:47:19 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats" for ::1 at 2019-05-07 11:47:24 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 25.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats" for ::1 at 2019-05-07 11:47:53 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cats/1" for ::1 at 2019-05-07 11:48:18 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+Completed 404 Not Found in 16ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cat with 'id'={:id=>"1"}):
+  
+app/controllers/cats_controller.rb:8:in `show'
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:48:27 -0700
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:48:29 -0700
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:48:40 -0700
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:48:40 -0700
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/kat/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:48:47 -0700
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:48:47 -0700
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:48:57 -0700
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:49:21 -0700
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:49:26 -0700
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:49:50 -0700
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:49:56 -0700
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:49:58 -0700
+Started PUT "/__web_console/repl_sessions/0fa16ca44a464ff52fe607fa11625294" for ::1 at 2019-05-07 11:50:03 -0700
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+Started GET "/cats/1" for ::1 at 2019-05-07 11:51:15 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+  [1m[36mCACHE Cat Load (0.0ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 29.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 11:51:22 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:51:22 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/cats/1" for ::1 at 2019-05-07 11:52:22 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+  [1m[36mCACHE Cat Load (0.0ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (285.1ms)
+Completed 500 Internal Server Error in 313ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cat' for #<#<Class:0x00007fc0180d8650>:0x00007fc018506ee8>
+Did you mean?  @cat):
+    1: <h1>
+    2:     <%= cat.name %>
+    3: </h1>
+    4: 
+    5: <h2> About me: </h2>
+  
+app/views/cats/show.html.erb:2:in `_app_views_cats_show_html_erb__3552057167541463709_70231509187600'
+Started GET "/cats/1" for ::1 at 2019-05-07 11:52:36 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+  [1m[36mCACHE Cat Load (0.0ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 51ms (Views: 44.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cats/1" for ::1 at 2019-05-07 11:53:02 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (1.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+  [1m[36mCACHE Cat Load (0.0ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/show.html.erb:6: syntax error, unexpected '='
+...;@output_buffer.append=( class="cat-name" @cat.description )...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/show.html.erb:6: syntax error, unexpected tIVAR, expecting ')'
+....append=( class="cat-name" @cat.description );@output_buffer...
+...                           ^~~~):
+  
+app/views/cats/show.html.erb:6: syntax error, unexpected '='
+app/views/cats/show.html.erb:6: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/cats/1" for ::1 at 2019-05-07 11:53:50 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+  [1m[36mCACHE Cat Load (0.0ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cats/1" for ::1 at 2019-05-07 11:55:36 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.2ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 29.9ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 11:55:48 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:55:48 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/cats" for ::1 at 2019-05-07 11:56:01 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (1.7ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 44ms (Views: 37.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/cats" for ::1 at 2019-05-07 11:56:39 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:10: syntax error, unexpected ',', expecting ')'
+...ffer.append=( label_tag (:name, "text") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+...d=( label_tag (:name, "text") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:13: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/cats/index.html.erb:10: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:13: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/cats" for ::1 at 2019-05-07 11:56:49 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:10: syntax error, unexpected ',', expecting ')'
+...uffer.append=( label_tag (:for, "name") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+...nd=( label_tag (:for, "name") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:13: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/cats/index.html.erb:10: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:13: syntax error, unexpected keyword_ensure, expecting end-of-input
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 13:14:41 -0700
+Started GET "/cable" for ::1 at 2019-05-07 13:14:42 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 13:14:42 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/cats" for ::1 at 2019-05-07 13:22:23 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:10: syntax error, unexpected ',', expecting ')'
+...ffer.append=( label_tag (:name, "Name") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+...d=( label_tag (:name, "Name") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:13: syntax error, unexpected ',', expecting ')'
+...ppend=( label_tag (:birth_date, "Birth Day") );@output_buffe...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:13: syntax error, unexpected ')', expecting keyword_end
+...ag (:birth_date, "Birth Day") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:16: syntax error, unexpected ',', expecting ')'
+...ffer.append=( label_tag (:name, "Name") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:16: syntax error, unexpected ')', expecting keyword_end
+...d=( label_tag (:name, "Name") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:19: syntax error, unexpected ',', expecting ')'
+...ffer.append=( label_tag (:name, "Name") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:19: syntax error, unexpected ')', expecting keyword_end
+...d=( label_tag (:name, "Name") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:23: syntax error, unexpected '<'
+<% end );
+^):
+  
+app/views/cats/index.html.erb:10: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:13: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:13: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:16: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:19: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:19: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:23: syntax error, unexpected '<'
+Started GET "/cats" for ::1 at 2019-05-07 13:28:33 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:10: syntax error, unexpected ',', expecting ')'
+...ffer.append=( label_tag (:name, "Name") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+...d=( label_tag (:name, "Name") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:13: syntax error, unexpected ',', expecting ')'
+...ppend=( label_tag (:birth_date, "Birth Day") );@output_buffe...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:13: syntax error, unexpected ')', expecting keyword_end
+...ag (:birth_date, "Birth Day") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:16: syntax error, unexpected ',', expecting ')'
+...ffer.append=( label_tag (:name, "Name") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:16: syntax error, unexpected ')', expecting keyword_end
+...d=( label_tag (:name, "Name") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:19: syntax error, unexpected ',', expecting ')'
+...ffer.append=( label_tag (:name, "Name") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:19: syntax error, unexpected ')', expecting keyword_end
+...d=( label_tag (:name, "Name") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:23: syntax error, unexpected '<'
+<% end );
+^):
+  
+app/views/cats/index.html.erb:10: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:13: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:13: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:16: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:19: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:19: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:23: syntax error, unexpected '<'
+Started GET "/cats" for ::1 at 2019-05-07 13:29:10 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:10: syntax error, unexpected ',', expecting ')'
+..._buffer.append=( label_tag (:q, "Name") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+...pend=( label_tag (:q, "Name") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:13: syntax error, unexpected ',', expecting ')'
+...ppend=( label_tag (:birth_date, "Birth Day") );@output_buffe...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:13: syntax error, unexpected ')', expecting keyword_end
+...ag (:birth_date, "Birth Day") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:16: syntax error, unexpected ',', expecting ')'
+...ffer.append=( label_tag (:name, "Name") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:16: syntax error, unexpected ')', expecting keyword_end
+...d=( label_tag (:name, "Name") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:19: syntax error, unexpected ',', expecting ')'
+...ffer.append=( label_tag (:name, "Name") );@output_buffer.saf...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:19: syntax error, unexpected ')', expecting keyword_end
+...d=( label_tag (:name, "Name") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:23: syntax error, unexpected '<'
+<% end );
+^):
+  
+app/views/cats/index.html.erb:10: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:13: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:13: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:16: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:19: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:19: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:23: syntax error, unexpected '<'
+Started GET "/cats" for ::1 at 2019-05-07 13:29:40 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:13: syntax error, unexpected ',', expecting ')'
+...ppend=( label_tag (:birth_date, "Birth Day") );@output_buffe...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:13: syntax error, unexpected ')', expecting keyword_end
+...ag (:birth_date, "Birth Day") );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:27: syntax error, unexpected '<'
+<% end );
+^):
+  
+app/views/cats/index.html.erb:13: syntax error, unexpected ',', expecting ')'
+app/views/cats/index.html.erb:13: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/index.html.erb:27: syntax error, unexpected '<'
+Started GET "/cats" for ::1 at 2019-05-07 13:29:51 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:27: syntax error, unexpected '<'
+<% end );
+^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:32: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/cats/index.html.erb:27: syntax error, unexpected '<'
+app/views/cats/index.html.erb:32: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/cats" for ::1 at 2019-05-07 13:30:58 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:23: syntax error, unexpected '<'
+<% end );
+^
+/Users/kat/Desktop/cats99/app/views/cats/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/cats/index.html.erb:23: syntax error, unexpected '<'
+app/views/cats/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/cats" for ::1 at 2019-05-07 13:31:08 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (1.8ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (20.7ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Cat::ActiveRecord_Relation:0x00007fc0191609f0>
+Did you mean?  to_set
+               to_ary):
+     6: <% end %>
+     7: 
+     8: <h4> Add Cat</h4>
+     9: <%= form_for @cats do |f| %>
+    10:     <%= label_ta(:name, "Name") %>
+    11:     <%= text_field_tag(:name) %>
+    12: 
+  
+app/views/cats/index.html.erb:9:in `_app_views_cats_index_html_erb___96814726665922325_70231467875220'
+Started GET "/cats" for ::1 at 2019-05-07 13:31:29 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Cat::ActiveRecord_Relation:0x00007fc0167184e0>
+Did you mean?  to_set
+               to_ary):
+     6: <% end %>
+     7: 
+     8: <h4> Add Cat</h4>
+     9: <%= form_for(@cats) do |f| %>
+    10:     <%= label_ta(:name, "Name") %>
+    11:     <%= text_field_tag(:name) %>
+    12: 
+  
+app/views/cats/index.html.erb:9:in `_app_views_cats_index_html_erb___96814726665922325_70231493479680'
+Started GET "/cats" for ::1 at 2019-05-07 13:31:40 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (137.5ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `label_ta' for #<#<Class:0x00007fc013661360>:0x00007fc012e7c730>
+Did you mean?  label_tag):
+     7: 
+     8: <h4> Add Cat</h4>
+     9: <%= form_for(:cat) do |f| %>
+    10:     <%= label_ta(:name, "Name") %>
+    11:     <%= text_field_tag(:name) %>
+    12: 
+    13:     <%= label_ta(:birth_date, "Birth Day") %>
+  
+app/views/cats/index.html.erb:10:in `block in _app_views_cats_index_html_erb___96814726665922325_70231463815200'
+app/views/cats/index.html.erb:9:in `_app_views_cats_index_html_erb___96814726665922325_70231463815200'
+Started GET "/cats" for ::1 at 2019-05-07 13:31:49 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (248.1ms)
+Completed 500 Internal Server Error in 257ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `label_ta' for #<#<Class:0x00007fc013661360>:0x00007fc01834b9a0>
+Did you mean?  label_tag):
+    10:     <%= label_tag(:name, "Name") %>
+    11:     <%= text_field_tag(:name) %>
+    12: 
+    13:     <%= label_ta(:birth_date, "Birth Day") %>
+    14:     <%= text_field_tag(:birth_date) %>
+    15: 
+    16:     <%= label_ta(:color, "Color") %>
+  
+app/views/cats/index.html.erb:13:in `block in _app_views_cats_index_html_erb___96814726665922325_70231508238900'
+app/views/cats/index.html.erb:9:in `_app_views_cats_index_html_erb___96814726665922325_70231508238900'
+Started GET "/cats" for ::1 at 2019-05-07 13:32:05 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 43ms (Views: 38.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats" for ::1 at 2019-05-07 13:33:54 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..3)):
+    11:     <%= text_field_tag(:name) %>
+    12: 
+    13:     <%= label_tag(:birth_date, "Birth Day") %>
+    14:     <%= date_field(:birth_date) %>
+    15: 
+    16:     <%= label_tag(:color, "Color") %>
+    17:     <%= text_field_tag(:name) %>
+  
+app/views/cats/index.html.erb:14:in `block in _app_views_cats_index_html_erb___96814726665922325_70231476619280'
+app/views/cats/index.html.erb:9:in `_app_views_cats_index_html_erb___96814726665922325_70231476619280'
+Started GET "/cats" for ::1 at 2019-05-07 13:34:55 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (8.3ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 65ms (Views: 50.4ms | ActiveRecord: 8.3ms)
+
+
+Started POST "/cats" for ::1 at 2019-05-07 13:35:11 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/cats"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/cats" for ::1 at 2019-05-07 13:35:53 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/cats"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cats" for ::1 at 2019-05-07 13:35:57 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (1.6ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 44ms (Views: 39.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/cats/new" for ::1 at 2019-05-07 13:38:24 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+Completed 404 Not Found in 16ms (ActiveRecord: 2.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cat with 'id'=new):
+  
+app/controllers/cats_controller.rb:8:in `show'
+Started GET "/new" for ::1 at 2019-05-07 13:38:34 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/create" for ::1 at 2019-05-07 13:38:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/create"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/new" for ::1 at 2019-05-07 13:39:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/new" for ::1 at 2019-05-07 13:39:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cats" for ::1 at 2019-05-07 13:39:54 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.8ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 54ms (Views: 34.4ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/cats/new" for ::1 at 2019-05-07 13:39:56 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mCat Load (0.9ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+Completed 404 Not Found in 6ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cat with 'id'=new):
+  
+app/controllers/cats_controller.rb:8:in `show'
+Started GET "/cable" for ::1 at 2019-05-07 13:39:59 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 13:39:59 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/cats/new" for ::1 at 2019-05-07 13:40:49 -0700
+  
+ArgumentError ('' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/cable" for ::1 at 2019-05-07 13:40:59 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 13:40:59 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/cats/new" for ::1 at 2019-05-07 13:41:05 -0700
+  
+ArgumentError ('' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/cats/create" for ::1 at 2019-05-07 13:41:08 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:8
+Completed 404 Not Found in 21ms (ActiveRecord: 10.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cat with 'id'=create):
+  
+app/controllers/cats_controller.rb:8:in `show'
+Started GET "/create" for ::1 at 2019-05-07 13:41:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/create"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cable" for ::1 at 2019-05-07 13:41:13 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 13:41:13 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started PUT "/__web_console/repl_sessions/5c029e2a1ff66999e44f94b431007343" for ::1 at 2019-05-07 13:41:18 -0700
+Started PUT "/__web_console/repl_sessions/5c029e2a1ff66999e44f94b431007343" for ::1 at 2019-05-07 13:41:19 -0700
+Started GET "/create" for ::1 at 2019-05-07 13:42:11 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 13:42:19 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 13:42:19 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/create" for ::1 at 2019-05-07 13:43:22 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 13:43:24 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/create"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/create" for ::1 at 2019-05-07 13:43:41 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 13:43:43 -0700
+Processing by CatsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1WiBuizZCkThJIYTVo+I6+d9apAQ4pCkxiu+t3GjqMKk8aYVOBULWDeExNgengicXIS2QeZliVv8POiazb6v1g==", "name"=>"", "birth_date"=>{"Birth"=>""}, "commit"=>"Add"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 13:43:45 -0700
+Processing by CatsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1pI8nxBi/RXTuKrO6W8+4KNp5Jd3fY0uOfECbYB9m52nCxswBK78CQUY6AWhfr6XGJA4RoH6lNED5lRAPGCciQ==", "name"=>"", "birth_date"=>{"Birth"=>""}, "commit"=>"Add"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 13:43:52 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 13:43:52 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 13:43:56 -0700
+Processing by CatsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KPcoyoWjpdxC6mQARzfeso1TL50yG3odxN8RpaCJB8JZbg9lkW+kwJRKJssPJl7FNqrzTMScY+L+yEeIHJQA1g==", "name"=>"F", "birth_date"=>{"Birth"=>"2019-05-07"}, "commit"=>"Add"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCat Load (0.8ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" ORDER BY "cats"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/create" for ::1 at 2019-05-07 13:52:01 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 13:52:03 -0700
+Processing by CatsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YuTREwE3ogcxwe/7t5HNgMcsWvM/iczXeMbfabLt22MTffa8FfujG+dhrTD/gE33fNWGIskO1ShC0YlEDvDcdw==", "name"=>"", "birth_date"=>{"Birth"=>""}, "commit"=>"Add"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 13:52:10 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 13:52:10 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 13:52:14 -0700
+Processing by CatsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z1686GzIU1UzWIPuMVtr7EvjV3J123n0LWndLNN2oH4Wx5tHeARSSeX4wSV5Suub8BqLo4NcYAsXfosBb2unag==", "name"=>"F", "birth_date"=>{"Birth"=>"2019-05-07"}, "commit"=>"Add"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" ORDER BY "cats"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/create" for ::1 at 2019-05-07 13:53:48 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:16: syntax error, unexpected ',', expecting ')'
+...=( text_area_tag (:description, "Description"), size: "60x60...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:16: syntax error, unexpected tLABEL
+...cription, "Description"), size: "60x60" );@output_buffer.saf...
+...                          ^~~~~
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:16: syntax error, unexpected ')', expecting keyword_end
+..."Description"), size: "60x60" );@output_buffer.safe_append='
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/cats/new.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/cats/new.html.erb:16: syntax error, unexpected tLABEL
+app/views/cats/new.html.erb:16: syntax error, unexpected ')', expecting keyword_end
+app/views/cats/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/create" for ::1 at 2019-05-07 13:54:02 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:16: syntax error, unexpected ',', expecting ')'
+...g(:description, "Description"), size: "60x60" );@output_buff...
+...                              ^):
+  
+app/views/cats/new.html.erb:16: syntax error, unexpected ',', expecting ')'
+Started GET "/create" for ::1 at 2019-05-07 13:56:09 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 13:56:17 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 13:56:28 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 13:56:44 -0700
+Processing by CatsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5RtvwAphZcdTBgBqzatKPj7GPY7SE+4drJfKuEjRGgaUgkhvHq1k24WmQqGFuspJhT/hXySU9+KWgJyV9MwdEg==", "name"=>"F", "birth_date"=>{"Birth"=>"2019-05-07"}, "description"=>"Write about the kitten!sk", "commit"=>"Add"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" ORDER BY "cats"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+Started GET "/create" for ::1 at 2019-05-07 13:58:16 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 13:58:26 -0700
+Processing by CatsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wLJz7guDVMqcjmcM/kftYKM9Kt5ATT1CUziXc7qk/KmxK1RBH09V1kouJce2Vm0XGMT2D7bKJL1pL8FeBrn7vQ==", "name"=>"kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" ORDER BY "cats"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/create" for ::1 at 2019-05-07 13:59:30 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 13:59:37 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 13:59:37 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 14:00:05 -0700
+Processing by CatsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UFvTjiwy1x7YrOqXGZIYlQjQZa75qF7+bhCJaHGRSxIhwvQhOP7WAg4MqFxRg5jisym5fw8vRwFUB99FzYxMBg==", "name"=>"Kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" ORDER BY "cats"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/create" for ::1 at 2019-05-07 14:00:54 -0700
+Processing by CatsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fKy3APUMvEm5tKXuJpmI1ZzH5QSCU7FcsMlnvHYkBbYNNZCv4cC9VW8U5yVuiAiiJz451XTUqKOK3jGRyjkCog==", "name"=>"kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 14:01:00 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:01:00 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/create" for ::1 at 2019-05-07 14:04:14 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/create"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cable" for ::1 at 2019-05-07 14:04:25 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:04:25 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/create" for ::1 at 2019-05-07 14:06:01 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 14:06:08 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:06:08 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 14:06:11 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2wcSXRA/6DF5PBeT2KPgU3oydTHwmBmqV0q6E+xKxmyqnjXyBPPpLa+cVViQsmAkwcup4AYfAFVtXew+UFfBeA==", "name"=>"kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: cat):
+  
+app/controllers/cats_controller.rb:27:in `cat_params'
+app/controllers/cats_controller.rb:13:in `create'
+Started PUT "/__web_console/repl_sessions/2015ee691c13e3812e694b3626fbce39" for ::1 at 2019-05-07 14:06:24 -0700
+Started PUT "/__web_console/repl_sessions/2015ee691c13e3812e694b3626fbce39" for ::1 at 2019-05-07 14:06:32 -0700
+Started PUT "/__web_console/repl_sessions/2015ee691c13e3812e694b3626fbce39" for ::1 at 2019-05-07 14:06:32 -0700
+Started PUT "/__web_console/repl_sessions/2015ee691c13e3812e694b3626fbce39" for ::1 at 2019-05-07 14:06:51 -0700
+Started POST "/create" for ::1 at 2019-05-07 14:07:04 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2wcSXRA/6DF5PBeT2KPgU3oydTHwmBmqV0q6E+xKxmyqnjXyBPPpLa+cVViQsmAkwcup4AYfAFVtXew+UFfBeA==", "name"=>"kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: cats):
+  
+app/controllers/cats_controller.rb:27:in `cat_params'
+app/controllers/cats_controller.rb:13:in `create'
+Started GET "/cable" for ::1 at 2019-05-07 14:07:10 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:07:10 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 14:08:25 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2wcSXRA/6DF5PBeT2KPgU3oydTHwmBmqV0q6E+xKxmyqnjXyBPPpLa+cVViQsmAkwcup4AYfAFVtXew+UFfBeA==", "name"=>"kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: cats):
+  
+app/controllers/cats_controller.rb:27:in `cat_params'
+app/controllers/cats_controller.rb:13:in `create'
+Started POST "/create" for ::1 at 2019-05-07 14:08:52 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2wcSXRA/6DF5PBeT2KPgU3oydTHwmBmqV0q6E+xKxmyqnjXyBPPpLa+cVViQsmAkwcup4AYfAFVtXew+UFfBeA==", "name"=>"kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: cats):
+  
+app/controllers/cats_controller.rb:27:in `cat_params'
+app/controllers/cats_controller.rb:13:in `create'
+Started POST "/create" for ::1 at 2019-05-07 14:09:25 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2wcSXRA/6DF5PBeT2KPgU3oydTHwmBmqV0q6E+xKxmyqnjXyBPPpLa+cVViQsmAkwcup4AYfAFVtXew+UFfBeA==", "name"=>"kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: cat):
+  
+app/controllers/cats_controller.rb:27:in `cat_params'
+app/controllers/cats_controller.rb:13:in `create'
+Started GET "/create" for ::1 at 2019-05-07 14:09:29 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:3: syntax error, unexpected ')', expecting =>
+... label_tag(cat:[:name], "Name") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:6: syntax error, unexpected ')', expecting =>
+...cat:[:birth_date], "Birth Day") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:9: syntax error, unexpected ')', expecting =>
+...abel_tag(cat:[:color], "Color") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:12: syntax error, unexpected ')', expecting =>
+...=( label_tag(cat:[:sex], "Sex") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:15: syntax error, unexpected ')', expecting =>
+...:[:description], "Description") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;
+          ^~~
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/cats/new.html.erb:3: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:6: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:9: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:12: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+app/views/cats/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cats/new.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/cable" for ::1 at 2019-05-07 14:09:34 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:09:34 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started PUT "/__web_console/repl_sessions/c13c6ceba65bdf2eeb48098834a2d817" for ::1 at 2019-05-07 14:10:32 -0700
+Started PUT "/__web_console/repl_sessions/c13c6ceba65bdf2eeb48098834a2d817" for ::1 at 2019-05-07 14:10:33 -0700
+Started GET "/create" for ::1 at 2019-05-07 14:11:19 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:3: syntax error, unexpected ')', expecting =>
+... label_tag(cat:[:name], "Name") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:6: syntax error, unexpected ')', expecting =>
+...cat:[:birth_date], "Birth Day") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:7: syntax error, unexpected ')', expecting =>
+...eld(cat:[:birth_date], "Birth") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:9: syntax error, unexpected ')', expecting =>
+...abel_tag(cat:[:color], "Color") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:12: syntax error, unexpected ')', expecting =>
+...=( label_tag(cat:[:sex], "Sex") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:15: syntax error, unexpected ')', expecting =>
+...:[:description], "Description") );@output_buffer.safe_append...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:16: syntax error, unexpected ',', expecting =>
+...on], "Write about the kitten!", cols: 30, rows: 10));@output...
+...                              ^
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;
+          ^~~
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/cats/new.html.erb:3: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:6: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:7: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:9: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:12: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/cats/new.html.erb:16: syntax error, unexpected ',', expecting =>
+app/views/cats/new.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+app/views/cats/new.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cats/new.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/create" for ::1 at 2019-05-07 14:11:59 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 14:12:07 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PPuvxWkwXWwLVJ+ED2tTxY6c97h44SGgZBrzvToaj7lNYohqffxccN303U9HetOyNWUraY5mOF9eDaWQhgeIrQ==", "name"=>"kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 16.8ms)
+
+
+  
+LoadError (dlopen(/Users/kat/.rbenv/versions/2.5.1/lib/ruby/2.5.0/x86_64-darwin16/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.7.dylib
+  Referenced from: /Users/kat/.rbenv/versions/2.5.1/lib/ruby/2.5.0/x86_64-darwin16/readline.bundle
+  Reason: image not found - /Users/kat/.rbenv/versions/2.5.1/lib/ruby/2.5.0/x86_64-darwin16/readline.bundle):
+  
+app/controllers/cats_controller.rb:14:in `create'
+Started GET "/cable" for ::1 at 2019-05-07 14:12:09 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:12:09 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 14:12:28 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PPuvxWkwXWwLVJ+ED2tTxY6c97h44SGgZBrzvToaj7lNYohqffxccN303U9HetOyNWUraY5mOF9eDaWQhgeIrQ==", "name"=>"kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+Completed 500 Internal Server Error in 255ms (ActiveRecord: 12.8ms)
+
+
+  
+NameError (undefined local variable or method `errors' for #<CatsController:0x00007fc0140e11a0>):
+  
+app/controllers/cats_controller.rb:18:in `create'
+Started GET "/cable" for ::1 at 2019-05-07 14:12:37 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:12:37 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 14:16:17 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PPuvxWkwXWwLVJ+ED2tTxY6c97h44SGgZBrzvToaj7lNYohqffxccN303U9HetOyNWUraY5mOF9eDaWQhgeIrQ==", "name"=>"kitten", "birth_date"=>{"Birth"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+Completed 500 Internal Server Error in 223ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (undefined local variable or method `errors' for #<CatsController:0x00007fc0190c9578>):
+  
+app/controllers/cats_controller.rb:18:in `create'
+Started GET "/create" for ::1 at 2019-05-07 14:16:21 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 14:16:32 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hFYXLrY2GqA97KcGn+0GKpZeaXQgyGxpqqCojG8gUTv1zzCBovobvOtM5c3X/IZdLae1pdZPdZaQt/6h0z1WLw==", "name"=>"kitten", "birth_date"=>{"Birth Date"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 1.1ms)
+
+
+  
+NameError (undefined local variable or method `errors' for #<CatsController:0x00007fc0146e2860>):
+  
+app/controllers/cats_controller.rb:18:in `create'
+Started GET "/create" for ::1 at 2019-05-07 14:17:24 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..3)):
+    3:     <%= label_tag(:name, "Name") %>
+    4:     <%= text_field_tag(:name) %>
+    5: 
+    6:     <%= date_field(:birth_date) %>
+    7: 
+    8:     <%= label_tag(:color, "Color") %>
+    9:     <%= text_field_tag(:color) %>
+  
+app/views/cats/new.html.erb:6:in `block in _app_views_cats_new_html_erb__3857026151313874841_70231474005760'
+app/views/cats/new.html.erb:2:in `_app_views_cats_new_html_erb__3857026151313874841_70231474005760'
+Started GET "/create" for ::1 at 2019-05-07 14:18:04 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:18:23 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 14:18:31 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36aYMLvtMi7nzlGWIIsC9OH1A3+lAIb5LnVrbGorFImuP7+fryEzMjFuE11omoKDWgzfrlOHnwYUYj1B1jYTnQ==", "name"=>"kitten", "birth_date"=>{"Birth Date"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 10.2ms)
+
+
+  
+NameError (undefined local variable or method `errors' for #<CatsController:0x00007fc0183b0be8>):
+  
+app/controllers/cats_controller.rb:18:in `create'
+Started GET "/cable" for ::1 at 2019-05-07 14:18:32 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:18:32 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/create" for ::1 at 2019-05-07 14:19:11 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 14:19:19 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:19:19 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 14:19:19 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cq6TpxZn6dbkFsjp5I4W5M2aKnPMwXYrrJCYtdlJ0DoDN7QIAqvoyjK2iiKsn5aTdmP2ojpGb9SWh86YZVTXLg==", "name"=>"kitten", "birth_date"=>{"Birth Date"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 18.6ms)
+
+
+  
+NameError (undefined local variable or method `cat' for #<CatsController:0x00007fc013368280>
+Did you mean?  @cat):
+  
+app/controllers/cats_controller.rb:18:in `create'
+Started GET "/create" for ::1 at 2019-05-07 14:19:37 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 28ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 14:19:43 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1G6OkYupfAQc0hQsdRTapVK2gVqs4DUpuP/DNnqnmxml96k+n2V9GMpyVuc9BVrS6U9di1pnLNaC6JUbxrqcDQ==", "name"=>"kitten", "birth_date"=>{"Birth Date"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 8.5ms)
+
+
+  
+NoMethodError (undefined method `<<' for nil:NilClass):
+  
+app/controllers/cats_controller.rb:18:in `create'
+Started GET "/cable" for ::1 at 2019-05-07 14:19:44 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:19:44 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started PUT "/__web_console/repl_sessions/21b6a089117eb170cf7b45f0215cbd79" for ::1 at 2019-05-07 14:19:57 -0700
+Started PUT "/__web_console/repl_sessions/21b6a089117eb170cf7b45f0215cbd79" for ::1 at 2019-05-07 14:19:58 -0700
+Started PUT "/__web_console/repl_sessions/21b6a089117eb170cf7b45f0215cbd79" for ::1 at 2019-05-07 14:20:00 -0700
+Started PUT "/__web_console/repl_sessions/21b6a089117eb170cf7b45f0215cbd79" for ::1 at 2019-05-07 14:20:04 -0700
+Started PUT "/__web_console/repl_sessions/21b6a089117eb170cf7b45f0215cbd79" for ::1 at 2019-05-07 14:20:05 -0700
+Started PUT "/__web_console/repl_sessions/21b6a089117eb170cf7b45f0215cbd79" for ::1 at 2019-05-07 14:20:08 -0700
+Started PUT "/__web_console/repl_sessions/21b6a089117eb170cf7b45f0215cbd79" for ::1 at 2019-05-07 14:20:13 -0700
+Started PUT "/__web_console/repl_sessions/21b6a089117eb170cf7b45f0215cbd79" for ::1 at 2019-05-07 14:20:16 -0700
+Started GET "/create" for ::1 at 2019-05-07 14:20:28 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 14:20:35 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:20:35 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 14:20:39 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VcqLg4DRvVxzEx4EHYx8Ov4zS78V5j+gOR2LSiSEj7okU6wslB28QKWzXM9VnfxNRcqXbuNhJl8DCt1nmJmIrg==", "name"=>"kitten", "birth_date"=>{"Birth Date"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>All of the Kittens!</h1>
+    2: 
+    3: <%  @cats.each do |cat| %>
+    4: <%= cat.name %>
+    5: <br>
+    6: <% end %>
+  
+app/views/cats/index.html.erb:3:in `_app_views_cats_index_html_erb___96814726665922325_70231514941720'
+app/controllers/cats_controller.rb:19:in `create'
+Started PUT "/__web_console/repl_sessions/04aa190353de4a55beff077a7626c4e9" for ::1 at 2019-05-07 14:20:56 -0700
+Started PUT "/__web_console/repl_sessions/04aa190353de4a55beff077a7626c4e9" for ::1 at 2019-05-07 14:20:57 -0700
+Started GET "/create" for ::1 at 2019-05-07 14:21:34 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 14:21:44 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:21:44 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/create" for ::1 at 2019-05-07 14:22:53 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/kat/Desktop/cats99/app/views/cats/new.html.erb:21: syntax error, unexpected '<'
+    <%= flash[:errors].each do |er...
+    ^):
+  
+app/views/cats/new.html.erb:21: syntax error, unexpected '<'
+Started GET "/create" for ::1 at 2019-05-07 14:23:13 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 14:23:23 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2yfP90dRLDKVJbUOUkLGMJrfTqIh/WDFv9BH9ylihvqqvuhYU50tLkOF98UaU0ZHISaSc9d6eTqFxxHalX+B7g==", "name"=>"kitten", "birth_date"=>{"Birth Date"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 67ms (Views: 25.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:24:19 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:24:21 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 14:24:29 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lWeH8sXcUC4cEA7IgTYUBrYLlFbo7wq/8Qvn5vpzv8Lk/qBd0RBRMsqwTAPJJ5RxDfJIhx5oE0DLHLHLRm641g==", "name"=>"kitten", "birth_date"=>{"Birth Date"=>"2019-05-07"}, "color"=>"blak", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 43ms (Views: 32.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:31:54 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:31:57 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:31:59 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 14:32:03 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:32:03 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 14:32:08 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q2YfeQ8HqbKbl19pxZIxln1CxE3yB6UPpW2KJ2llQFDa/zjWG8uork03HaKNg7HhxrsYnASAvPCfetwK1XhHRA==", "name"=>"kitten", "birth_date"=>{"Birth Date"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 74ms (Views: 38.2ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:32:30 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 71ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:32:32 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 14:32:43 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jrEhIA/lhxrC6amMD8j0aAR025AP9xH7TbZij/s0h/f/KAaPGymGBhRJ60dH2XQfv40HQflwCAR3oTSiRymA4w==", "name"=>"kitten", "birth_date"=>{"Birth Date"=>"2019-05-07"}, "color"=>"black", "sex"=>"f", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :birth_date, :commit
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 43ms (Views: 34.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:33:45 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..3)):
+    3:     <%= label_tag(:name, "Name") %>
+    4:     <%= text_field_tag(:name) %>
+    5: 
+    6:     <%= date_field("birth_date") %>
+    7: 
+    8:     <%= label_tag(:color, "Color") %>
+    9:     <%= text_field_tag(:color) %>
+  
+app/views/cats/new.html.erb:6:in `block in _app_views_cats_new_html_erb__3857026151313874841_70231475710400'
+app/views/cats/new.html.erb:2:in `_app_views_cats_new_html_erb__3857026151313874841_70231475710400'
+Started GET "/create" for ::1 at 2019-05-07 14:38:13 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "Name":String):
+    1: <h4> Add Cat</h4>
+    2: <%= form_for(:cat, method:"post") do |f| %>
+    3: 
+    4:     <%= text_field_tag(:cat, :name, "Name") %>
+    5:     <%= text_field(:name) %>
+    6: 
+    7: 
+  
+app/views/cats/new.html.erb:4:in `block in _app_views_cats_new_html_erb__3857026151313874841_70231489788740'
+app/views/cats/new.html.erb:2:in `_app_views_cats_new_html_erb__3857026151313874841_70231489788740'
+Started GET "/create" for ::1 at 2019-05-07 14:38:47 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..3)):
+    2: <%= form_for(:cat, method:"post") do |f| %>
+    3: 
+    4:     <%= text_field_tag(:cat, :name) %>
+    5:     <%= text_field(:name) %>
+    6: 
+    7: 
+    8:     <%= date_field(:cat, "birth_date") %>
+  
+app/views/cats/new.html.erb:5:in `block in _app_views_cats_new_html_erb__3857026151313874841_70231515408080'
+app/views/cats/new.html.erb:2:in `_app_views_cats_new_html_erb__3857026151313874841_70231515408080'
+Started GET "/create" for ::1 at 2019-05-07 14:39:04 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:39:07 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:39:20 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:40:01 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 14:40:09 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+vsKBv7KLbOW4oBqhsJD+2+WlB/vNHEChLWNdcLzVEWLYi2p6gYsr0BCwqHO08OM1G9IzhmzaP2+ottYfu5TUQ==", "cat"=>{"name"=>"kitten", "birth_date"=>"2019-05-07"}, "color"=>"black", "sex"=>"F", "description"=>"Write about the kitten!", "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :cat, :commit
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 49ms (Views: 36.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:44:03 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 4, expected 2..3)):
+    14:     <%= text_field(:cat, :sex) %>
+    15: 
+    16:     <%= label_tag(:description, "Description") %>
+    17:     <%= text_area(:cat, :description, "Write about the kitten!", cols: 30, rows: 10)%>
+    18: 
+    19:     <%= submit_tag("Add") %>
+    20: <% end %>
+  
+app/views/cats/new.html.erb:17:in `block in _app_views_cats_new_html_erb__3857026151313874841_70231463570720'
+app/views/cats/new.html.erb:2:in `_app_views_cats_new_html_erb__3857026151313874841_70231463570720'
+Started GET "/create" for ::1 at 2019-05-07 14:44:04 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 4, expected 2..3)):
+    14:     <%= text_field(:cat, :sex) %>
+    15: 
+    16:     <%= label_tag(:description, "Description") %>
+    17:     <%= text_area(:cat, :description, "Write about the kitten!", cols: 30, rows: 10)%>
+    18: 
+    19:     <%= submit_tag("Add") %>
+    20: <% end %>
+  
+app/views/cats/new.html.erb:17:in `block in _app_views_cats_new_html_erb__3857026151313874841_70231463985000'
+app/views/cats/new.html.erb:2:in `_app_views_cats_new_html_erb__3857026151313874841_70231463985000'
+Started GET "/cable" for ::1 at 2019-05-07 14:44:10 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:44:10 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started GET "/create" for ::1 at 2019-05-07 14:48:31 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:48:54 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into String):
+    14:     <%= text_field(:cat, :sex) %>
+    15: 
+    16:     <%= text_area_tag(:description, "Write about the kitten!", cols: 30, rows: 10)%>
+    17:     <<%= text_area(:cat, :description, "30x30")%>>
+    18: 
+    19:     <%= submit_tag("Add") %>
+    20: <% end %>
+  
+app/views/cats/new.html.erb:17:in `block in _app_views_cats_new_html_erb__3857026151313874841_70231464267080'
+app/views/cats/new.html.erb:2:in `_app_views_cats_new_html_erb__3857026151313874841_70231464267080'
+Started GET "/create" for ::1 at 2019-05-07 14:49:27 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 54ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:49:34 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2019-05-07 14:49:45 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qvkoe0vZilw34/htEnQbgPx7neI7vSlJIeIZ1U/1KTwzYA/UXxWLQOFDuqZaZZv3R4JBM806MLYb9U/48+guKA==", "cat"=>{"name"=>"kitten", "birth_date"=>"2019-05-07", "color"=>"black", "sex"=>"F", "description"=>"Kitten"}, "commit"=>"Add"}
+Unpermitted parameters: :utf8, :authenticity_token, :cat, :commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/cats_controller.rb:15
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 73ms (Views: 26.8ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:50:02 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create" for ::1 at 2019-05-07 14:50:04 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-07 14:50:09 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:50:09 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 14:50:14 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rFjS22P8RoSPQu/utoY4IeujpcgqBxsW1kdd5Cc7fgvdwfV0dzBHmFnirSX+l7hWUFp5GdyAAunsUAvJmyZ5Hw==", "cat"=>{"name"=>"kitten", "birth_date"=>"2019-05-07", "color"=>"black", "sex"=>"F", "description"=>"Kitten"}, "commit"=>"Add"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[36mCat Create (0.9ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2019-05-07"], ["color", "black"], ["name", "kitten"], ["sex", "F"], ["description", "Kitten"], ["created_at", "2019-05-07 21:50:14.899729"], ["updated_at", "2019-05-07 21:50:14.899729"]]
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:15
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 9.7ms)
+
+
+  
+NameError (undefined local variable or method `cats' for #<CatsController:0x00007fc013f10240>
+Did you mean?  @cat):
+  
+app/controllers/cats_controller.rb:16:in `create'
+Started GET "/create" for ::1 at 2019-05-07 14:50:30 -0700
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCat Load (1.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" ORDER BY "cats"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/cable" for ::1 at 2019-05-07 14:50:39 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 14:50:39 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ChatChannel"
+Started POST "/create" for ::1 at 2019-05-07 14:50:54 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VSWsD2j8Kegplay3+HxNbsolX+hzBmbXiV8X41MpDZAkvIugfDAo9P817nywbc0ZcdyDOYWBfyizSEHO7zQKhA==", "cat"=>{"name"=>"Baby", "birth_date"=>"2019-05-07", "color"=>"tabby", "sex"=>"F", "description"=>"Kitty"}, "commit"=>"Add"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[36mCat Create (1.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2019-05-07"], ["color", "tabby"], ["name", "Baby"], ["sex", "F"], ["description", "Kitty"], ["created_at", "2019-05-07 21:50:54.454395"], ["updated_at", "2019-05-07 21:50:54.454395"]]
+  ↳ app/controllers/cats_controller.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:15
+Redirected to http://localhost:3000/cats
+Completed 302 Found in 33ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/cats" for ::1 at 2019-05-07 14:50:54 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.5ms)
+
+

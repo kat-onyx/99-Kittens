@@ -1,0 +1,26 @@
+<h4> Add Cat</h4>
+<%= form_for(:cat, method:"post") do |f| %>
+
+    <%= label_tag(:name, "Name") %>
+    <%= text_field(:cat, :name) %>
+
+    <%= label_tag(:birth_date, "Birth Day") %>
+    <%= date_field(:cat, "birth_date") %>
+    
+    <%= label_tag(:color, "Color") %>
+    <%= text_field(:cat, :color) %>
+
+    <%= label_tag(:sex, "Sex") %>
+    <%= text_field(:cat, :sex) %>
+
+    <%= label_tag(:description, "Description") %>
+    <%= text_area(:cat, :description)%>
+
+    <%= submit_tag("Add") %>
+<% end %>
+
+<% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+        <%= error %>
+    <% end %>
+<% end %>
